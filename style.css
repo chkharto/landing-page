@@ -249,6 +249,28 @@ body {
 }
 
 @media only screen and (max-width: 950px) {
+    .rate {
+        width: 400px;
+        top: 630px;
+        left: -10px;
+        justify-content: space-evenly;
+    }
+    
+    .rate h1 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    .rate .stars {
+        font-size: 15px;
+    }
+    
+    .some-text {
+        width: 300px;
+        top: 580px;
+        left: 50px;
+    }
+
     .search-bar {
         position: absolute;
         top: 500px;
@@ -304,6 +326,29 @@ body {
 }
 
 @media only screen and (max-width: 650px) {
+    .rate {
+        width: 400px;
+        top: 570px;
+        left: -10px;
+        justify-content: space-evenly;
+    }
+    
+    .rate h1 {
+        font-size: 27px;
+        font-weight: bold;
+    }
+    
+    .rate .stars {
+        font-size: 13px;
+    }
+
+    .some-text {
+        width: 300px;
+        top: 480px;
+        left: 50px;
+        font-size: 15px;
+    }
+    
     .search-bar {
         top: 400px;
         left: 0px;
@@ -374,4 +419,129 @@ body {
 .hidden {
     visibility: hidden;
     height: 0;
+}
+
+/*----- login form ------*/
+.header.hide,
+.texties.hide,
+.image.hide,
+.search-bar.hide,
+.some-text.hide,
+.rate.hide {
+    filter: blur(10px);
+}
+
+.center {
+    position: absolute;
+    margin-left: 450px;
+    margin-top: -50px;
+}
+
+.hidden {
+    height: 0;
+    visibility: hidden;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 550px;
+    background: linear-gradient(to right, #ffdef8 10%, #d9fbf0 90%);
+    border: 4px solid #0A2647;
+    border-radius: 15px;
+    transition: 0.5s;
+    z-index: 100;
+}
+
+.wrapper form h2 {
+    margin-top: -3px;
+    background-color: #131230;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 70px 70px 0 0;
+    color: #fff;
+}
+
+button {
+    margin: 3px;
+    padding: 2px;
+    color: white;
+    background-color: rgb(255, 43, 43);
+    width: 250px;
+    height: 36px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(255, 26, 14, 0.727);
+}
+
+.input-box input[type="email"]{
+    color: white;
+    background-color: #000;
+}
+
+.input-box input[type="password"]{
+    color: white;
+    background-color: #000;
+}
+
+.forgot-password a{
+    color: rgb(4, 0, 255);
+    margin: 5px;
+    text-decoration: none;
+}
+
+.forgot-password {
+    margin-top: 5px;
+}
+
+.registration-link a{
+    text-decoration: none;
+    color: rgb(4, 0, 255);
+}
+
+.wrapper:hover {
+    border: 4px solid #00FFD1;
+    box-shadow: 0 0 20px #00FFD1,
+            inset 0 0 20px #31C6D4;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.wrapper:hover {
+    color: #ff0000;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    border-radius: 7px;
+    background: transparent;
+    border: 2px solid #0A2647;
+    outline: none;
+    font-size: 0 10px 0 35px;
+    transition: 0.5s;
+}
+
+.wrapper:hover .input-box input {
+    border: 2px solid #FFFF00;
+    box-shadow: 0 0 10px #FFFF00;
+}
+
+.input-box input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.btn2 {
+    position: absolute;
+    margin-top: 350px;
+    height: 50px;
+    font-size: 30px;
 }
